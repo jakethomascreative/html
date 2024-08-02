@@ -1,7 +1,7 @@
 /* STRUCTURE */
 body {
     background-color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin:0px;
     padding:0px;
 }
@@ -14,10 +14,11 @@ body {
     background-color: #454545;
 }
 article {
-    min-height:220px;
+    height:auto;
     border: 1px solid rgb(252, 163, 99);
     margin: 5px 0px;
     padding: 10px;
+    text-align: left;
 }
 
 
@@ -49,6 +50,7 @@ h1, h2, h3, h4 {
 p, li {
     color:#fff;
     text-align:left;
+    margin:5px 0px;
 }
 
 #avatar {
@@ -57,14 +59,22 @@ p, li {
 
  /* LAYOUT-SPECIFIC CONTENT STYLES */
 .articleText {
-    float:right;
+    display:inline-block;
+    /* float:right; */
     width: calc(100% - 130px)
 }
 
  article img {
+    /* display:inline-block; */
     width: 120px;
     height: auto;
-    text-align: left;
     padding-right: 10px;
-    
+    float:left;
+}
+
+article h1,
+article h2,
+article h3,
+article h4 {
+    margin:0px;
 }
