@@ -13,6 +13,13 @@ body {
     padding: 20px;
     background-color: #454545;
 }
+article {
+    min-height:220px;
+    border: 1px solid rgb(252, 163, 99);
+    margin: 5px 0px;
+    padding: 10px;
+}
+
 
 /* NAVIGATION */
 nav ul {
@@ -24,7 +31,7 @@ nav li {
     list-style-type: none;
 }
 
-/* TEXT STYLES */
+/* GENERAL CONTENT STYLES */
 a {
     color: rgb(252, 163, 99);
     text-decoration: none;
@@ -36,14 +43,28 @@ a:hover {
 
 h1, h2, h3, h4 {
     color: rgb(245, 112, 20);
-    margin:10px;
+    margin:10px 0px;
 }
 
-p {
+p, li {
     color:#fff;
+    text-align:left;
 }
 
 #avatar {
     padding-right: 20px;
 }
 
+ /* LAYOUT-SPECIFIC CONTENT STYLES */
+.articleText {
+    float:right;
+    width: calc(100% - 130px)
+}
+
+ article img {
+    width: 120px;
+    height: auto;
+    text-align: left;
+    padding-right: 10px;
+    
+}
